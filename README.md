@@ -4,6 +4,9 @@ An AI-powered, real-time control console and interactive fan companion applicati
 
 This repository is built with **React + Vite** and optimized across six core engineering benchmarks: **Problem Statement Alignment, Code Quality, Efficiency, Security, Testing, and Accessibility (a11y)**.
 
+🔗 **Live Deployment Link**: [https://rajbarot3826.github.io/fifa-smart-stadium/](https://rajbarot3826.github.io/fifa-smart-stadium/)
+
+
 ---
 
 ## 🎯 Scoring Parameters & Implementation Strategy
