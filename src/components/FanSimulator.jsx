@@ -416,15 +416,20 @@ export default function FanSimulator({ onPathCalculated }) {
         </div>
 
         {/* Smartphone Tab Bar (Navigation Controls) */}
-        <div style={{
-          background: "#1e293b",
-          borderTop: "1px solid var(--border-color)",
-          display: "flex",
-          justifyContent: "space-around",
-          padding: "8px 0 16px 0",
-          zIndex: 40
-        }}>
+        <div 
+          role="tablist"
+          style={{
+            background: "#1e293b",
+            borderTop: "1px solid var(--border-color)",
+            display: "flex",
+            justifyContent: "space-around",
+            padding: "8px 0 16px 0",
+            zIndex: 40
+          }}
+        >
           <button 
+            role="tab"
+            aria-selected={activeTab === "navigation"}
             onClick={() => setActiveTab("navigation")}
             style={{ background: "transparent", border: "none", color: activeTab === "navigation" ? "var(--neon-cyan)" : "var(--text-muted)", display: "flex", flexDirection: "column", alignItems: "center", gap: "2px", cursor: "pointer" }}
             aria-label="Open Navigation tab"
@@ -434,6 +439,8 @@ export default function FanSimulator({ onPathCalculated }) {
           </button>
 
           <button 
+            role="tab"
+            aria-selected={activeTab === "concessions"}
             onClick={() => setActiveTab("concessions")}
             style={{ background: "transparent", border: "none", color: activeTab === "concessions" ? "var(--neon-cyan)" : "var(--text-muted)", display: "flex", flexDirection: "column", alignItems: "center", gap: "2px", cursor: "pointer" }}
             aria-label="Open Concessions Ordering tab"
@@ -443,6 +450,8 @@ export default function FanSimulator({ onPathCalculated }) {
           </button>
 
           <button 
+            role="tab"
+            aria-selected={activeTab === "chat"}
             onClick={() => setActiveTab("chat")}
             style={{ background: "transparent", border: "none", color: activeTab === "chat" ? "var(--neon-cyan)" : "var(--text-muted)", display: "flex", flexDirection: "column", alignItems: "center", gap: "2px", cursor: "pointer" }}
             aria-label="Open Fan Support Chat tab"
