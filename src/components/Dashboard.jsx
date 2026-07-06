@@ -7,7 +7,6 @@ import {
   Activity, 
   MapPin, 
   CheckCircle, 
-  AlertTriangle,
   Play
 } from "lucide-react";
 

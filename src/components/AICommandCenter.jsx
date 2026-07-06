@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Send, Globe, Shield, Terminal, BookOpen, AlertCircle } from "lucide-react";
+import { Send, Shield, Terminal, BookOpen } from "lucide-react";
 import { parseCommand } from "../utils/commandParser";
 import { translateText } from "../utils/translator";
 
@@ -14,7 +14,7 @@ export default function AICommandCenter({
   setPrefilledCommand 
 }) {
   const [input, setInput] = useState("");
-  const [language, setLanguage] = useState("en"); // en, es, fr
+
   const [logs, setLogs] = useState([
     {
       sender: "system",

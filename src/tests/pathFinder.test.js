@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { findShortestPath, STADIUM_NODES } from "../utils/pathFinder";
+import { findShortestPath } from "../utils/pathFinder";
 
 describe("Pathfinder Unit Tests (Dijkstra)", () => {
   it("should find the shortest path between Gate A and Sec 101", () => {

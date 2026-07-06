@@ -3,7 +3,7 @@ import Dashboard from "./components/Dashboard";
 import InteractiveMap from "./components/InteractiveMap";
 import AICommandCenter from "./components/AICommandCenter";
 import FanSimulator from "./components/FanSimulator";
-import { Compass, ShieldAlert, Heart, Calendar } from "lucide-react";
+import { Compass, ShieldAlert, Calendar } from "lucide-react";
 
 /**
  * FIFA World Cup 2026 Smart Stadiums & Tournament Operations Hub
@@ -40,7 +40,7 @@ function App() {
   ]);
 
   // Initial stadium occupancy metrics
-  const [occupancyData, setOccupancyData] = useState({
+  const [occupancyData] = useState({
     "Sec 101": 74,
     "Sec 102": 89,
     "Sec 103": 96, // Near Peak
