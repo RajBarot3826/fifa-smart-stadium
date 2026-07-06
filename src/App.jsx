@@ -4,6 +4,7 @@ import InteractiveMap from "./components/InteractiveMap";
 import AICommandCenter from "./components/AICommandCenter";
 import FanSimulator from "./components/FanSimulator";
 import { Compass, ShieldAlert, Calendar } from "lucide-react";
+import { logIncidentToCloud } from "./utils/firebase";
 
 /**
  * FIFA World Cup 2026 Smart Stadiums & Tournament Operations Hub
@@ -120,6 +121,7 @@ function App() {
       };
 
       setIncidents(prev => [newInc, ...prev]);
+      logIncidentToCloud(newInc);
 
       // Dynamically raise average wait time slightly due to disruptions
       setMetrics(prev => ({
